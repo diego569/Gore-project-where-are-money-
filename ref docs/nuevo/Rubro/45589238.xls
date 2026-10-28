@@ -1,0 +1,640 @@
+<style type="text/css">
+	
+body
+{
+	font-weight: normal;
+	font-size: 0.7em;
+	word-spacing: normal;
+	text-transform: none;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	letter-spacing: normal;
+	background-color: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	left: 0px;
+	right: 0px;
+	border: 0px;
+}
+
+/* Panel Historial */
+#PnlHistory
+{    
+    background-color: #ffffff;
+}
+
+.History
+{
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: solid 1px #dddddd;
+}
+
+.History tr
+{
+    height: 20px;
+}
+
+.History tr.alt
+{
+}
+
+.History td
+{
+    border-left: solid 1px #dddddd;
+    border-right: solid 1px #dddddd;
+}
+/* Panel Historial - Fin */
+
+/* Panel Datos */
+#PnlData
+{
+    background-color: #ffffff;
+}
+
+.MapTable
+{
+    background-color: #3a6ea5;
+    color: #ffffff;
+    border-collapse: collapse;
+    border-width: 0px;
+}
+
+.MapTable tr
+{
+    height: 18px;
+}
+
+.MapTable td
+{
+    border: solid 1px #dddddd;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.Data
+{    
+    width: 100%;
+    border-collapse: collapse;
+    border-width: 0px;
+}
+
+.Data tr
+{
+    cursor: pointer;    
+    height: 22px;
+    text-align: right;
+}
+
+.Data tr.alt
+{
+}
+
+.Data tr.More
+{
+    text-align: left;
+    height: auto;
+    background-color: #f1f1f1;    
+}
+
+.Data tr.More td
+{
+    padding-left: 4px;
+}
+
+.Data td
+{
+    border: solid 1px #dddddd;
+}
+/* Panel Datos - Fin */
+
+/* Cabecera */
+#hd
+{
+    font-size: 8pt;   
+}
+
+#hd .title
+{
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: Verdana;
+}
+
+#hd .subtitle
+{
+    font-size: 8pt;
+    font-family: Verdana;
+}
+
+#hd .fecha
+{
+    font-size: 8pt;
+}
+
+#hd span.value
+{
+    font-size: 10pt;
+}
+
+/* Cabecera - End */
+</style><body>
+	<table id="hd">
+		<tr>
+			<td colspan="9"><div class='title'><img src='../Images/Transparencia.gif' alt='' height='40' /><br /><br />Consulta Amigable</div><div class='subtitle'>Consulta de Ejecución del Gasto</div><br /><div class='fecha'>Fecha de la Consulta: 07-octubre-2026</div><br /><b>Año de Ejecución: <span class='value'>2026</span><br />Incluye: <span class='value'>Sólo Proyectos</span></b></td>
+		</tr>
+	</table>
+	
+                    <table class="History" cellspacing="0" cellpadding="1">
+                
+                    <tr align="right">
+                        
+                        <td align="left" style="font-size: 7pt; width: auto">
+                            TOTAL
+                            
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            34,015,086,995
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            39,304,521,626
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            36,318,302,038
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            32,858,604,069
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            28,997,663,000
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            27,090,650,310
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            26,323,839,794
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap">&nbsp;68.9</td>
+                    </tr>
+                
+                    <tr align="right" class="alt">
+                        
+                        <td align="left" style="font-size: 7pt; width: auto" tabindex="9">
+                            Nivel de Gobierno R: GOBIERNOS REGIONALES
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="10">
+                            14,621,708,053
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="11">
+                            17,195,709,314
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="12">
+                            15,784,257,389
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="13">
+                            13,432,636,957
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="14">
+                            12,122,778,775
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="15">
+                            11,126,053,149
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="16">
+                            10,507,898,591
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap" tabindex="17">&nbsp;64.7</td>
+                    </tr>
+                
+                    <tr align="right">
+                        
+                        <td align="left" style="font-size: 7pt; width: auto">
+                            Sector 99: GOBIERNOS REGIONALES
+                            
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            14,621,708,053
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            17,191,556,410
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            15,780,169,909
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            13,428,925,307
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            12,119,130,245
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            11,122,675,057
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            10,504,531,177
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap">&nbsp;64.7</td>
+                    </tr>
+                
+                    <tr align="right" class="alt">
+                        
+                        <td align="left" style="font-size: 7pt; width: auto" tabindex="9">
+                            Pliego 458: GOBIERNO REGIONAL DEL DEPARTAMENTO DE PUNO
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="10">
+                            797,237,434
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="11">
+                            987,989,928
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="12">
+                            919,407,194
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="13">
+                            674,417,032
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="14">
+                            563,217,599
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="15">
+                            495,199,000
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="16">
+                            468,824,315
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap" tabindex="17">&nbsp;50.1</td>
+                    </tr>
+                
+                    <tr align="right">
+                        
+                        <td align="left" style="font-size: 7pt; width: auto">
+                            Rubro 00: RECURSOS ORDINARIOS
+                            
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            113,201,949
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            112,168,899
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            111,166,574
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            56,889,835
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            31,239,916
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            31,239,916
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            31,239,916
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap">&nbsp;27.9</td>
+                    </tr>
+                
+                    </table>
+                <table id="ctl00_CPH1_Mt0" class="MapTable" style="width:100%;">
+		<tr id="ctl00_CPH1_Mt0_Row0">
+			<td id="ctl00_CPH1_Mt0_td1" title="Concepto" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td1&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="cursor:hand;">Proyecto</td><td id="ctl00_CPH1_Mt0_td2" title="Presupuesto Institucional de Apertura" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td2&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;white-space:nowrap;cursor:hand;">PIA</td><td id="ctl00_CPH1_Mt0_td3" title="Presupuesto Institucional Modificado" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td3&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;white-space:nowrap;cursor:hand;">PIM</td><td id="ctl00_CPH1_Mt0_td9" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td9&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;cursor:hand;">Certificación</td><td id="ctl00_CPH1_Mt0_td4" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td4&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;cursor:hand;">Compromiso Anual</td><td id="ctl00_CPH1_Mt0_TableCell1" title="Ejecución de Gastos en las diferentes fases" colspan="3">
+                                Ejecución
+                                </td><td id="ctl00_CPH1_Mt0_td8" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td8&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:50px;cursor:hand;">Avance %&nbsp;
+                            </td>
+		</tr><tr id="ctl00_CPH1_Mt0_Row1">
+			<td id="ctl00_CPH1_Mt0_td5" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td5&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;cursor:hand;">Atención de Compromiso Mensual&nbsp;
+                            </td><td id="ctl00_CPH1_Mt0_td6" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td6&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;white-space:nowrap;cursor:hand;">Devengado&nbsp;
+                            </td><td id="ctl00_CPH1_Mt0_td7" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td7&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;white-space:nowrap;cursor:hand;">Girado&nbsp;
+                            </td>
+		</tr>
+	</table>
+                            <table class="Data" cellspacing="0" cellpadding="1">
+                        
+                            <tr id="tr0" onclick='kCod="2194501";tr_clk(0, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left" style="width: auto">
+                                    2194501: INSTALACION DEL SERVICIO EDUCATIVO DE LA INSTITUCION EDUCATIVA SECUNDARIA SANTA MONICA EN EL DISTRITO DE JULIACA, PROVINCIA DE SAN ROMAN - PUNO.
+                                    
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    144,908
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    0
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    0
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    0
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    0
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    0
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    0
+                                </td>
+                                <td style="white-space: nowrap; width: 50px">&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr1" onclick='kCod="2194504";tr_clk(1, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2194504: INSTALACION DEL SERVICIO EDUCATIVO DEL NIVEL SECUNDARIO EN LA I.E.S. RODOLFO DIESEL, DISTRITO DE JULIACA, PROVINCIA SAN ROMAN - PUNO.
+                                    
+                                </td>
+                                <td>
+                                    17,477
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr2" onclick='kCod="2251136";tr_clk(2, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2251136: MEJORAMIENTO DE LA CAPACIDAD RESOLUTIVA DEL HOSPITAL LUCIO ALDAZABAL PAUCA DE REDES HUANCANE, PROVINCIA DE HUANCANE - REGION PUNO
+                                    
+                                </td>
+                                <td>
+                                    56,150,305
+                                </td>
+                                <td>
+                                    56,150,305
+                                </td>
+                                <td>
+                                    56,150,304
+                                </td>
+                                <td>
+                                    55,370,048
+                                </td>
+                                <td>
+                                    29,724,124
+                                </td>
+                                <td>
+                                    29,724,124
+                                </td>
+                                <td>
+                                    29,724,124
+                                </td>
+                                <td>&nbsp;
+                                    52.9
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr3" onclick='kCod="2279375";tr_clk(3, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2279375: MEJORAMIENTO DE LOS SERVICIOS DE SALUD DEL HOSPITAL DE APOYO ILAVE, PROVINCIA DE EL COLLAO - REGION PUNO
+                                    
+                                </td>
+                                <td>
+                                    54,666,680
+                                </td>
+                                <td>
+                                    53,759,397
+                                </td>
+                                <td>
+                                    53,759,397
+                                </td>
+                                <td>
+                                    262,914
+                                </td>
+                                <td>
+                                    261,343
+                                </td>
+                                <td>
+                                    261,343
+                                </td>
+                                <td>
+                                    261,343
+                                </td>
+                                <td>&nbsp;
+                                    0.5
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr4" onclick='kCod="2321290";tr_clk(4, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2321290: MEJORAMIENTO DE LOS SERVICIOS DE TRANSITABILIDAD DE LA VIA VECINAL PU-595: DV. PAMPA BLANCA - RINCONADA - CERRO LUNAR, DISTRITO DE ANANEA, PROVINCIA DE SAN ANTONIO DE PUTINA - PUNO
+                                    
+                                </td>
+                                <td>
+                                    850,000
+                                </td>
+                                <td>
+                                    844,818
+                                </td>
+                                <td>
+                                    75,387
+                                </td>
+                                <td>
+                                    75,387
+                                </td>
+                                <td>
+                                    75,387
+                                </td>
+                                <td>
+                                    75,387
+                                </td>
+                                <td>
+                                    75,387
+                                </td>
+                                <td>&nbsp;
+                                    8.9
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr5" onclick='kCod="2521936";tr_clk(5, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2521936: MEJORAMIENTO Y AMPLIACION DEL SERVICIO DE EDUCACION SUPERIOR TECNOLOGICA EN EL INSTITUTO SUPERIOR TECNOLOGICO PUBLICO DE MACUSANI DISTRITO DE MACUSANI - PROVINCIA DE CARABAYA - DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    1,139,986
+                                </td>
+                                <td>
+                                    1,139,986
+                                </td>
+                                <td>
+                                    1,139,986
+                                </td>
+                                <td>
+                                    1,139,986
+                                </td>
+                                <td>
+                                    1,137,562
+                                </td>
+                                <td>
+                                    1,137,562
+                                </td>
+                                <td>
+                                    1,137,562
+                                </td>
+                                <td>&nbsp;
+                                    99.8
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr6" onclick='kCod="2527207";tr_clk(6, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2527207: RECUPERACION DEL PUENTE COLONIAL DE LAMPA, DISTRITO DE LAMPA - PROVINCIA DE LAMPA - DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    232,593
+                                </td>
+                                <td>
+                                    19,217
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr7" onclick='kCod="2710291";tr_clk(7, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2710291: MEJORAMIENTO DEL SERVICIO DE TRANSITABILIDAD VIAL INTERURBANA EN LA CARRETERA SAMAN (EMP. PU 804) - JUCCHILLY (DV. CHUCARIPO),PESQUERIA (EMP. PU - 113), CHUCARIPO-TITIHUE (EMP. PU 154), DV. QUEJON MOCCO (EMP. PU - 804) - QUEJON MOCCO -HOCUATA DE LOS DISTRITOS DE SAMAN, HUANCANE DE LAS PROVINCIAS DE AZANGARO, HUANCANE DEL DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    213,376
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr8" onclick='kCod="2730957";tr_clk(8, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2730957: ADQUISICION DE UNIDAD DENTAL Y AUTOCLAVE; EN EL(LA) ANANEA DISTRITO DE ANANEA, PROVINCIA SAN ANTONIO DE PUTINA, DEPARTAMENTO PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    41,800
+                                </td>
+                                <td>
+                                    41,500
+                                </td>
+                                <td>
+                                    41,500
+                                </td>
+                                <td>
+                                    41,500
+                                </td>
+                                <td>
+                                    41,500
+                                </td>
+                                <td>
+                                    41,500
+                                </td>
+                                <td>&nbsp;
+                                    99.3
+                                </td>
+                            </tr>
+                            
+                        
+                            </table>
+                        
+</body>

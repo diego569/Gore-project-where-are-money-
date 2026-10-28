@@ -1,0 +1,37 @@
+VUELOS JULIACA / AREQUIPA / CUSCO <-> LIMA  -  SEGUIMIENTO DE PRECIOS
+=====================================================================
+
+QUE HACE
+  Consulta Google Flights (libreria fast-flights, sin API key) y guarda una "foto" de precios cada vez que corre.
+  Fechas (config.json): ida 19, 20 o 21 de enero 2027 / vuelta 26 o 27 de enero 2027. Moneda: soles (PEN).
+  Por cada origen consulta: ida suelta, vuelta suelta y tarifa ida+vuelta conjunta (33 consultas, ~2 min).
+
+COMO USAR
+  1. Una sola vez: INSTALAR_DEPENDENCIAS.bat
+  2. CONSULTAR_AHORA.bat  (doble clic)  -> actualiza vuelos_precios.xlsx
+  3. INSTALAR_TAREA_DIARIA.bat -> consulta sola todos los dias 08:00 y 20:00 (la PC debe estar encendida con sesion abierta).
+     DESINSTALAR_TAREA_DIARIA.bat la quita.
+
+ARCHIVOS
+  vuelos_precios.xlsx        Resumen (mejor opcion por origen, minimo historico, cambio vs foto anterior),
+                             Vuelos actuales (todos los vuelos de la ultima foto, con filtro),
+                             Historial (precio minimo por ruta/fecha en cada foto), Evolucion (grafico).
+  historial\precios.csv      TODOS los vuelos de TODAS las fotos (la base historica; no borrar).
+  historial\mejores.csv      mejor combinacion por origen en cada foto.
+  ULTIMO_RESULTADO.txt       resumen en texto de la ultima corrida (marca "<<< BAJO" si el total bajo 5% o mas).
+
+LOGISTICA PUNO <-> AREQUIPA / CUSCO (estimada, editar en config.json)
+  - Ida: se asume salir de Puno a las 06:00; bus de 6 h (AQP) o 7 h (CUZ) + 2 h de colchon en aeropuerto.
+    Si el vuelo sale antes (AQP antes de las 14:00, CUZ antes de las 15:00) se suma una noche de hotel
+    ("Salir de Puno el dia anterior").
+  - Vuelta: llegada + 1 h + bus; si no se llega a Puno antes de medianoche, se suma hotel ("Dormir en ...").
+  - Cada tramo de bus cuesta bus_costo_por_tramo (S/ 40 AQP, S/ 50 CUZ; son supuestos, ajustelos).
+  - TOTAL ajustado = tarifa aerea + buses + hoteles. Es lo que sirve para comparar contra Juliaca.
+
+LIMITES
+  - Google Flights muestra el precio de la tarifa mas barata; el equipaje de bodega puede costar aparte.
+  - Algunos vuelos (p. ej. Sky) salen "sin precio" en Google: se guardan pero no entran al calculo.
+  - En la tarifa conjunta ida+vuelta la hora de la vuelta se elige en Google Flights; el programa solo guarda el total.
+  - Google puede cambiar su pagina y romper la libreria: si sale error, ejecutar
+    py -3 -m pip install -U fast-flights  y volver a probar.
+  - Para ir a comprar: google.com/travel/flights, mismas fechas.

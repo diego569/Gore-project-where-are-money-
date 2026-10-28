@@ -1,0 +1,1422 @@
+<style type="text/css">
+	
+body
+{
+	font-weight: normal;
+	font-size: 0.7em;
+	word-spacing: normal;
+	text-transform: none;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	letter-spacing: normal;
+	background-color: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	left: 0px;
+	right: 0px;
+	border: 0px;
+}
+
+/* Panel Historial */
+#PnlHistory
+{    
+    background-color: #ffffff;
+}
+
+.History
+{
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: solid 1px #dddddd;
+}
+
+.History tr
+{
+    height: 20px;
+}
+
+.History tr.alt
+{
+}
+
+.History td
+{
+    border-left: solid 1px #dddddd;
+    border-right: solid 1px #dddddd;
+}
+/* Panel Historial - Fin */
+
+/* Panel Datos */
+#PnlData
+{
+    background-color: #ffffff;
+}
+
+.MapTable
+{
+    background-color: #3a6ea5;
+    color: #ffffff;
+    border-collapse: collapse;
+    border-width: 0px;
+}
+
+.MapTable tr
+{
+    height: 18px;
+}
+
+.MapTable td
+{
+    border: solid 1px #dddddd;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.Data
+{    
+    width: 100%;
+    border-collapse: collapse;
+    border-width: 0px;
+}
+
+.Data tr
+{
+    cursor: pointer;    
+    height: 22px;
+    text-align: right;
+}
+
+.Data tr.alt
+{
+}
+
+.Data tr.More
+{
+    text-align: left;
+    height: auto;
+    background-color: #f1f1f1;    
+}
+
+.Data tr.More td
+{
+    padding-left: 4px;
+}
+
+.Data td
+{
+    border: solid 1px #dddddd;
+}
+/* Panel Datos - Fin */
+
+/* Cabecera */
+#hd
+{
+    font-size: 8pt;   
+}
+
+#hd .title
+{
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: Verdana;
+}
+
+#hd .subtitle
+{
+    font-size: 8pt;
+    font-family: Verdana;
+}
+
+#hd .fecha
+{
+    font-size: 8pt;
+}
+
+#hd span.value
+{
+    font-size: 10pt;
+}
+
+/* Cabecera - End */
+</style><body>
+	<table id="hd">
+		<tr>
+			<td colspan="9"><div class='title'><img src='../Images/Transparencia.gif' alt='' height='40' /><br /><br />Consulta Amigable</div><div class='subtitle'>Consulta de Ejecución del Gasto</div><br /><div class='fecha'>Fecha de la Consulta: 07-octubre-2026</div><br /><b>Año de Ejecución: <span class='value'>2026</span><br />Incluye: <span class='value'>Sólo Proyectos</span></b></td>
+		</tr>
+	</table>
+	
+                    <table class="History" cellspacing="0" cellpadding="1">
+                
+                    <tr align="right">
+                        
+                        <td align="left" style="font-size: 7pt; width: auto">
+                            TOTAL
+                            
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            34,015,086,995
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            39,304,521,626
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            36,318,302,038
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            32,858,604,069
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            28,997,663,000
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            27,090,650,310
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            26,323,839,794
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap">&nbsp;68.9</td>
+                    </tr>
+                
+                    <tr align="right" class="alt">
+                        
+                        <td align="left" style="font-size: 7pt; width: auto" tabindex="9">
+                            Nivel de Gobierno R: GOBIERNOS REGIONALES
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="10">
+                            14,621,708,053
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="11">
+                            17,195,709,314
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="12">
+                            15,784,257,389
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="13">
+                            13,432,636,957
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="14">
+                            12,122,778,775
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="15">
+                            11,126,053,149
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="16">
+                            10,507,898,591
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap" tabindex="17">&nbsp;64.7</td>
+                    </tr>
+                
+                    <tr align="right">
+                        
+                        <td align="left" style="font-size: 7pt; width: auto">
+                            Sector 99: GOBIERNOS REGIONALES
+                            
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            14,621,708,053
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            17,191,556,410
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            15,780,169,909
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            13,428,925,307
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            12,119,130,245
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            11,122,675,057
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            10,504,531,177
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap">&nbsp;64.7</td>
+                    </tr>
+                
+                    <tr align="right" class="alt">
+                        
+                        <td align="left" style="font-size: 7pt; width: auto" tabindex="9">
+                            Pliego 458: GOBIERNO REGIONAL DEL DEPARTAMENTO DE PUNO
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="10">
+                            797,237,434
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="11">
+                            987,989,928
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="12">
+                            919,407,194
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="13">
+                            674,417,032
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="14">
+                            563,217,599
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="15">
+                            495,199,000
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap" tabindex="16">
+                            468,824,315
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap" tabindex="17">&nbsp;50.1</td>
+                    </tr>
+                
+                    <tr align="right">
+                        
+                        <td align="left" style="font-size: 7pt; width: auto">
+                            Rubro 18: CANON Y SOBRECANON, REGALIAS, RENTA DE ADUANAS Y PARTICIPACIONES
+                            
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            64,712,952
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            103,404,213
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            95,153,468
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            53,076,242
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            44,675,194
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            39,240,606
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            37,518,427
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap">&nbsp;37.9</td>
+                    </tr>
+                
+                    </table>
+                <table id="ctl00_CPH1_Mt0" class="MapTable" style="width:100%;">
+		<tr id="ctl00_CPH1_Mt0_Row0">
+			<td id="ctl00_CPH1_Mt0_td1" title="Concepto" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td1&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="cursor:hand;">Proyecto</td><td id="ctl00_CPH1_Mt0_td2" title="Presupuesto Institucional de Apertura" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td2&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;white-space:nowrap;cursor:hand;">PIA</td><td id="ctl00_CPH1_Mt0_td3" title="Presupuesto Institucional Modificado" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td3&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;white-space:nowrap;cursor:hand;">PIM</td><td id="ctl00_CPH1_Mt0_td9" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td9&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;cursor:hand;">Certificación</td><td id="ctl00_CPH1_Mt0_td4" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td4&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;cursor:hand;">Compromiso Anual</td><td id="ctl00_CPH1_Mt0_TableCell1" title="Ejecución de Gastos en las diferentes fases" colspan="3">
+                                Ejecución
+                                </td><td id="ctl00_CPH1_Mt0_td8" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td8&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:50px;cursor:hand;">Avance %&nbsp;
+                            </td>
+		</tr><tr id="ctl00_CPH1_Mt0_Row1">
+			<td id="ctl00_CPH1_Mt0_td5" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td5&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;cursor:hand;">Atención de Compromiso Mensual&nbsp;
+                            </td><td id="ctl00_CPH1_Mt0_td6" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td6&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;white-space:nowrap;cursor:hand;">Devengado&nbsp;
+                            </td><td id="ctl00_CPH1_Mt0_td7" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td7&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;white-space:nowrap;cursor:hand;">Girado&nbsp;
+                            </td>
+		</tr>
+	</table>
+                            <table class="Data" cellspacing="0" cellpadding="1">
+                        
+                            <tr id="tr0" onclick='kCod="2001621";tr_clk(0, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left" style="width: auto">
+                                    2001621: ESTUDIOS DE PRE-INVERSION
+                                    
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    17,100,887
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    476,984
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    181,041
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    181,041
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    181,041
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    165,748
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    165,748
+                                </td>
+                                <td style="white-space: nowrap; width: 50px">&nbsp;
+                                    34.7
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr1" onclick='kCod="2163760";tr_clk(1, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2163760: MEJORAMIENTO DE LA INFRAESTRUCTURA VIAL TURISTICO, TRAMO PHUTINI - JAYU JAYU, DISTRITO DE ACORA - PUNO - PUNO
+                                    
+                                </td>
+                                <td>
+                                    2,596,051
+                                </td>
+                                <td>
+                                    1,202,934
+                                </td>
+                                <td>
+                                    1,151,624
+                                </td>
+                                <td>
+                                    1,151,624
+                                </td>
+                                <td>
+                                    1,137,287
+                                </td>
+                                <td>
+                                    1,105,100
+                                </td>
+                                <td>
+                                    1,105,100
+                                </td>
+                                <td>&nbsp;
+                                    91.9
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr2" onclick='kCod="2278822";tr_clk(2, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2278822: MEJORAMIENTO DE LOS SERVICIOS DE SALUD DEL HOSPITAL RAFAEL ORTIZ RAVINES DE JULI, PROVINCIA DE CHUCUITO - REGION PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    25,711,893
+                                </td>
+                                <td>
+                                    25,029,108
+                                </td>
+                                <td>
+                                    686,398
+                                </td>
+                                <td>
+                                    518,516
+                                </td>
+                                <td>
+                                    518,516
+                                </td>
+                                <td>
+                                    518,516
+                                </td>
+                                <td>&nbsp;
+                                    2.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr3" onclick='kCod="2313145";tr_clk(3, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2313145: MEJORAMIENTO DEL MANEJO SOSTENIBLE DE VICUÑAS EN ZONAS ALTOANDINAS DE LA REGION PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    40,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr4" onclick='kCod="2318520";tr_clk(4, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2318520: MEJORAMIENTO DE LA CAPACIDAD AGROPRODUCTIVA DE GRANOS ANDINOS ORGANICOS DE QUINUA, CAÑIHUA, HABA Y TARWI EN LA REGION PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    30,892
+                                </td>
+                                <td>
+                                    30,000
+                                </td>
+                                <td>
+                                    30,000
+                                </td>
+                                <td>
+                                    30,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr5" onclick='kCod="2343199";tr_clk(5, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2343199: MEJORAMIENTO DE LA CARRETERA (EMP 34B) AZANGARO - (EMP PU-102) JILA PURINA DE LOS DISTRITO DE AZANGARO - DISTRITO DE TIRAPATA - PROVINCIA DE AZANGARO - REGION PUNO
+                                    
+                                </td>
+                                <td>
+                                    12,491,498
+                                </td>
+                                <td>
+                                    12,491,498
+                                </td>
+                                <td>
+                                    12,327,297
+                                </td>
+                                <td>
+                                    11,352,852
+                                </td>
+                                <td>
+                                    9,980,295
+                                </td>
+                                <td>
+                                    9,294,562
+                                </td>
+                                <td>
+                                    8,759,398
+                                </td>
+                                <td>&nbsp;
+                                    74.4
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr6" onclick='kCod="2357091";tr_clk(6, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2357091: MEJORAMIENTO DE LA CAPACIDAD RESOLUTIVA DEL CENTRO DE SALUD COATA I-3 DE LA MICRORED JAE, RED DE SALUD PUNO - DIRESA PUNO, - DISTRITO DE COATA - PROVINCIA DE PUNO - REGION PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    2,000,000
+                                </td>
+                                <td>
+                                    2,000,000
+                                </td>
+                                <td>
+                                    2,000,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr7" onclick='kCod="2385673";tr_clk(7, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2385673: MEJORAMIENTO DEL SERVICIO EDUCATIVO DE LA I.E.S. LAS MERCEDES DE LA CIUDAD DE JULIACA - DISTRITO DE JULIACA - PROVINCIA DE SAN ROMAN - DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    8,016,014
+                                </td>
+                                <td>
+                                    8,073,670
+                                </td>
+                                <td>
+                                    7,997,652
+                                </td>
+                                <td>
+                                    7,385,055
+                                </td>
+                                <td>
+                                    7,288,405
+                                </td>
+                                <td>
+                                    6,014,893
+                                </td>
+                                <td>
+                                    5,707,445
+                                </td>
+                                <td>&nbsp;
+                                    74.5
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr8" onclick='kCod="2387422";tr_clk(8, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2387422: MEJORAMIENTO DE LA CARRETERA TRAMO II (PUENTE CULLCO) - PICHINCUTA - QUELCAHUECO - CORARACA DEL - DISTRITO DE ILAVE - PROVINCIA DE EL COLLAO - DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    1,017,000
+                                </td>
+                                <td>
+                                    990,765
+                                </td>
+                                <td>
+                                    990,765
+                                </td>
+                                <td>
+                                    986,128
+                                </td>
+                                <td>
+                                    905,384
+                                </td>
+                                <td>
+                                    897,022
+                                </td>
+                                <td>&nbsp;
+                                    89.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr9" onclick='kCod="2393101";tr_clk(9, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2393101: MEJORAMIENTO Y AMPLIACION DEL SERVICIO ADMINISTRATIVO DE LA UNIDAD DE GESTION EDUCATIVA LOCAL MELGAR EN EL DISTRITO DE AYAVIRI, PROVINCIA DE MELGAR, REGION PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    32,592
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr10" onclick='kCod="2456529";tr_clk(10, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2456529: MEJORAMIENTO DE LA CARRETERA PU 147, EMP. PE-34I JIPATA - EMP. PE-34I MOHO, DISTRITO DE MOHO - PROVINCIA DE MOHO - DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    15,500,800
+                                </td>
+                                <td>
+                                    16,225,932
+                                </td>
+                                <td>
+                                    15,631,465
+                                </td>
+                                <td>
+                                    14,702,035
+                                </td>
+                                <td>
+                                    11,131,977
+                                </td>
+                                <td>
+                                    8,459,203
+                                </td>
+                                <td>
+                                    8,055,205
+                                </td>
+                                <td>&nbsp;
+                                    52.1
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr11" onclick='kCod="2474102";tr_clk(11, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2474102: MEJORAMIENTO DEL SERVICIO DE PROTECCION FRENTE A TORMENTAS ELECTRICAS EN 4 PROVINCIAS DEL DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    1,500,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr12" onclick='kCod="2479852";tr_clk(12, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2479852: MEJORAMIENTO DE LA TRANSFERENCIA TECNOLOGICA EN LA PRODUCCION Y VALOR AGREGADO DE LA CADENA PRODUCTIVA DE VACUNOS DE CARNE EN LA REGION PUNO 9 PROVINCIAS DEL DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    286,651
+                                </td>
+                                <td>
+                                    173,531
+                                </td>
+                                <td>
+                                    173,531
+                                </td>
+                                <td>
+                                    173,531
+                                </td>
+                                <td>
+                                    173,531
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    60.5
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr13" onclick='kCod="2494039";tr_clk(13, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2494039: MEJORAMIENTO Y AMPLIACION DE LOS SERVICIOS DE SALUD EN EL ESTABLECIMIENTO DE SALUD UMACHIRI CATEGORIA I-2 DEL DISTRITO DE UMACHIRI - PROVINCIA DE MELGAR - DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    2,822,702
+                                </td>
+                                <td>
+                                    2,822,702
+                                </td>
+                                <td>
+                                    2,705,991
+                                </td>
+                                <td>
+                                    2,279,367
+                                </td>
+                                <td>
+                                    2,228,181
+                                </td>
+                                <td>
+                                    1,873,487
+                                </td>
+                                <td>
+                                    1,799,168
+                                </td>
+                                <td>&nbsp;
+                                    66.4
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr14" onclick='kCod="2518131";tr_clk(14, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2518131: AMPLIACION Y MEJORAMIENTO DE LOS SERVICIOS DE ADMINISTRACION DE JUSTICIA DE LOS ORGANOS JURISDICCIONALES DE LA SEDE CENTRAL DEL DISTRITO JUDICIAL DE PUNO, DISTRITO DE PUNO - PROVINCIA DE PUNO - DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    300,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr15" onclick='kCod="2559663";tr_clk(15, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2559663: AMPLIACION PARA EL MEJORAMIENTO DE LA PRODUCTIVIDAD DE CARNE Y LANA DE OVINOS 6 PROVINCIAS DEL DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    1,100,792
+                                </td>
+                                <td>
+                                    1,100,792
+                                </td>
+                                <td>
+                                    352,703
+                                </td>
+                                <td>
+                                    352,703
+                                </td>
+                                <td>
+                                    352,703
+                                </td>
+                                <td>
+                                    352,703
+                                </td>
+                                <td>&nbsp;
+                                    32.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr16" onclick='kCod="2592407";tr_clk(16, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2592407: MEJORAMIENTO DE LOS SERVICIOS OPERATIVOS O MISIONALES INSTITUCIONALES EN LA OFICINA DE EQUIPO MECANICO DEL GOBIERNO REGIONAL PUNO DISTRITO DE PUNO DE LA PROVINCIA DE PUNO DEL DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    6,185,000
+                                </td>
+                                <td>
+                                    5,168,000
+                                </td>
+                                <td>
+                                    5,167,700
+                                </td>
+                                <td>
+                                    5,167,700
+                                </td>
+                                <td>
+                                    5,166,717
+                                </td>
+                                <td>
+                                    5,166,717
+                                </td>
+                                <td>
+                                    5,164,781
+                                </td>
+                                <td>&nbsp;
+                                    100.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr17" onclick='kCod="2603148";tr_clk(17, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2603148: MEJORAMIENTO DE LOS SERVICIOS DE APOYO AL DESARROLLO PRODUCTIVO EN 19 UNIDADES PRODUCTORAS 19 DISTRITOS DE 7 PROVINCIAS DEL DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    7,532,522
+                                </td>
+                                <td>
+                                    7,219,901
+                                </td>
+                                <td>
+                                    1,332,861
+                                </td>
+                                <td>
+                                    469,393
+                                </td>
+                                <td>
+                                    469,393
+                                </td>
+                                <td>
+                                    437,050
+                                </td>
+                                <td>&nbsp;
+                                    6.2
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr18" onclick='kCod="2603155";tr_clk(18, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2603155: MEJORAMIENTO DE LOS SERVICIOS DE APOYO AL DESARROLLO PRODUCTIVO EN 37 UNIDADES PRODUCTORAS 37 DISTRITOS DE 11 PROVINCIAS DEL DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    2,771,598
+                                </td>
+                                <td>
+                                    2,718,358
+                                </td>
+                                <td>
+                                    1,426,712
+                                </td>
+                                <td>
+                                    1,352,358
+                                </td>
+                                <td>
+                                    1,242,796
+                                </td>
+                                <td>
+                                    1,057,718
+                                </td>
+                                <td>&nbsp;
+                                    44.8
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr19" onclick='kCod="2615902";tr_clk(19, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2615902: REMODELACION DE AUDITORIO; ADQUISICION DE EQUIPOS COMPLEMENTARIOS; REPARACION DE ESCALERA DE ACCESO Y ; EN EL(LA) DIRECCION REGIONAL AGRARIA SEDE CENTRAL DISTRITO DE PUNO, PROVINCIA PUNO, DEPARTAMENTO PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    20,000
+                                </td>
+                                <td>
+                                    20,000
+                                </td>
+                                <td>
+                                    17,500
+                                </td>
+                                <td>
+                                    17,500
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr20" onclick='kCod="2623876";tr_clk(20, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2623876: MEJORAMIENTO DEL SERVICIO DE EDUCACION SUPERIOR TECNOLOGICA EN EL INSTITUTO SUPERIOR TECNOLOGICO PUBLICO SANTA ROSA DEL DISTRITO DE SANTA ROSA DE LA PROVINCIA DE MELGAR DEL DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    25,959
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr21" onclick='kCod="2631496";tr_clk(21, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2631496: MEJORAMIENTO DE LOS SERVICIOS DE APOYO AL DESARROLLO PRODUCTIVO EN CAPACIDADES DE TRANSFORMACION Y COMERCIALIZACION DE LA CADENA PRODUCTIVA DE OVINOS EN LAS 5 PROVINCIAS DE LA ZONA SUR DEL DEPARTAMENTO DE PUNO DE PRADERA EN EL DISTRITO DE JULIACA DE LA PROVINCIA DE SAN ROMAN DEL DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    560,000
+                                </td>
+                                <td>
+                                    560,000
+                                </td>
+                                <td>
+                                    277,510
+                                </td>
+                                <td>
+                                    277,510
+                                </td>
+                                <td>
+                                    277,510
+                                </td>
+                                <td>
+                                    277,510
+                                </td>
+                                <td>&nbsp;
+                                    49.6
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr22" onclick='kCod="2650473";tr_clk(22, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2650473: CONSTRUCCION DE AULA DE EDUCACION SECUNDARIA, LABORATORIO Y/O TALLER, CERCO Y/O PORTADA Y SERVICIOS HIGIENICOS Y/O VESTIDORES; ADEMAS DE OTROS ACTIVOS EN EL(LA) I.E. AGROINDUSTRIAL DISTRITO DE PUTINA, PROVINCIA SAN ANTONIO DE PUTINA, DEPARTAMENTO PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    1,740,229
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr23" onclick='kCod="2651727";tr_clk(23, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2651727: MEJORAMIENTO Y AMPLIACION DEL SERVICIO DE PROVISION DE AGUA PARA RIEGO EN 16 UNIDADES PRODUCTORAS 3 DISTRITOS DE LA PROVINCIA DE MOHO DEL DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    584,370
+                                </td>
+                                <td>
+                                    186,342
+                                </td>
+                                <td>
+                                    186,342
+                                </td>
+                                <td>
+                                    186,342
+                                </td>
+                                <td>
+                                    25,198
+                                </td>
+                                <td>
+                                    25,198
+                                </td>
+                                <td>&nbsp;
+                                    4.3
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr24" onclick='kCod="2658446";tr_clk(24, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2658446: PROYECTOS PARA EL DESARROLLO LOCAL
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    1,376,515
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr25" onclick='kCod="2668521";tr_clk(25, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2668521: ADQUISICION DE AMBULANCIA ACUATICA; EN DOS ESTABLECIMIENTOS DE SALUD I.2 A NIVEL PROVINCIAL (PUNO - YUNGUYO)
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    130,744
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr26" onclick='kCod="2681074";tr_clk(26, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2681074: MEJORAMIENTO DEL SERVICIO DE ATENCION DE SALUD BASICOS EN ALTO PAVITA DISTRITO DE ZEPITA DE LA PROVINCIA DE CHUCUITO DEL DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    150,000
+                                </td>
+                                <td>
+                                    150,000
+                                </td>
+                                <td>
+                                    150,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr27" onclick='kCod="2681141";tr_clk(27, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2681141: MEJORAMIENTO DEL SERVICIO DE ATENCION DE SALUD BASICOS EN HUACULLANI DISTRITO DE HUACULLANI DE LA PROVINCIA DE CHUCUITO DEL DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    100,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr28" onclick='kCod="2683535";tr_clk(28, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2683535: MEJORAMIENTO DEL SERVICIO DE SEGURIDAD CIUDADANA LOCAL EN 73 UNIDADES PRODUCTORAS 73 DISTRITOS DE 11 PROVINCIAS DEL DEPARTAMENTO DE PUNO 11 PROVINCIAS DEL DEPARTAMENTO DE PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    4,061,056
+                                </td>
+                                <td>
+                                    3,960,302
+                                </td>
+                                <td>
+                                    3,172,246
+                                </td>
+                                <td>
+                                    3,139,618
+                                </td>
+                                <td>
+                                    3,138,172
+                                </td>
+                                <td>
+                                    3,138,172
+                                </td>
+                                <td>&nbsp;
+                                    77.3
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr29" onclick='kCod="2692290";tr_clk(29, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2692290: ADQUISICION DE EQUIPO DE ANESTESIA, VENTILADOR MECANICO, SISTEMA DE CIRUGIA LAPAROSCOPICA Y SISTEMA DE VIDEO GASTROENDOSCOPIA; ADEMAS DE OTROS ACTIVOS EN EL(LA) HOSPITAL SAN MARTIN DE PORRES DISTRITO DE MACUSANI, PROVINCIA CARABAYA, DEPARTAMENTO PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    3,545,000
+                                </td>
+                                <td>
+                                    3,544,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr30" onclick='kCod="2693367";tr_clk(30, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2693367: ADQUISICION DE EQUIPO DE ANESTESIA, ELECTROBISTURI, ELECTROBISTURI Y ELECTROBISTURI; ADEMAS DE OTROS ACTIVOS EN EL(LA) SAN JUAN DE DIOS (AYAVIRI) JR SANTA ROSA DISTRITO DE AYAVIRI, PROVINCIA MELGAR, DEPARTAMENTO PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    1,074,680
+                                </td>
+                                <td>
+                                    1,057,600
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class="alt" id="tr31" onclick='kCod="2694246";tr_clk(31, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                
+                                <td align="left">
+                                    2694246: ADQUISICION DE MAMOGRAFO, COLONOVIDEOENDOSCOPIO, MESA DE OPERACIONES HIDRAULICA/ELECTRICA Y CALDERO; ADEMAS DE OTROS ACTIVOS EN EL(LA) HOSPITAL REGIONAL MANUEL NUÑEZ BUTRON HOSPITAL REGIONAL MANUEL NUÑEZ BUTRON DISTRITO DE PUNO, PROVINCIA PUNO, DEPARTAMENTO PUNO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    1,250,000
+                                </td>
+                                <td>
+                                    1,250,000
+                                </td>
+                                <td>
+                                    60,000
+                                </td>
+                                <td>
+                                    57,692
+                                </td>
+                                <td>
+                                    57,692
+                                </td>
+                                <td>
+                                    57,692
+                                </td>
+                                <td>&nbsp;
+                                    4.6
+                                </td>
+                            </tr>
+                            
+                        
+                            </table>
+                        
+</body>

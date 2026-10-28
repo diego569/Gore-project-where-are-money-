@@ -1,0 +1,24 @@
+{
+  "moneda": "PEN",
+  "asientos": "economy",
+  "adultos": 1,
+  "destino": "LIM",
+  "fechas_ida": ["2027-01-19", "2027-01-20", "2027-01-21"],
+  "fechas_vuelta": ["2027-01-26", "2027-01-27"],
+  "pausa_segundos": 2.5,
+  "consultar_ida_y_vuelta": true,
+  "origenes": [
+    {"nombre": "Juliaca", "aeropuerto": "JUL", "terrestre": false},
+    {"nombre": "Arequipa", "aeropuerto": "AQP", "terrestre": true,
+     "bus_horas": 6, "bus_costo_por_tramo": 40, "hotel_costo_noche": 100},
+    {"nombre": "Cusco", "aeropuerto": "CUZ", "terrestre": true,
+     "bus_horas": 7, "bus_costo_por_tramo": 50, "hotel_costo_noche": 100}
+  ],
+  "logistica": {
+    "hora_salida_puno": 6,
+    "colchon_aeropuerto_horas": 2,
+    "colchon_llegada_horas": 1,
+    "hora_limite_llegar_a_puno": 24
+  },
+  "alerta_baja_porcentaje": 5
+}

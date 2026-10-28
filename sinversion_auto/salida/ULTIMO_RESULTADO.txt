@@ -1,0 +1,8 @@
+09/10/2026 20:08
+Listo: E:\New folder\Economia\8vo\gore\Cash data request\sinversion_auto\salida\2026-10-09\SINVERSION_PROYECTOS_2026-10-09.xlsx
+       E:\New folder\Economia\8vo\gore\Cash data request\sinversion_auto\salida\2026-10-09\SINVERSION_GASTO_CORRIENTE_2026-10-09.xlsx
+Proyectos (UE-CUI-meta): 500 · sin clasificar: 2
+Gasto corriente UE 001 (metas): 80 · sin oficina: 80
+Fuentes: cifras = API Datos Abiertos MEF · dump (descarga masiva); cartera = API Banco de Inversiones (MEF); Silucia = 505 metas de la copia local del 07/10/2026 (sin token vigente; Silucia cambia cada ~3 meses)
+Agregados al maestro para clasificar: 0 proyectos, 0 metas de gasto corriente
+AVISO: Cartera del MEF consultada SIN verificar el certificado SSL (no se pudo validar en esta PC).

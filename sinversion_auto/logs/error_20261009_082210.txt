@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\New folder\Economia\8vo\gore\Cash data request\sinversion_auto\actualizar.py", line 398, in main
+    r = correr(args)
+        ^^^^^^^^^^^^
+  File "E:\New folder\Economia\8vo\gore\Cash data request\sinversion_auto\actualizar.py", line 369, in correr
+    ep.construir(d_proy, siaf, cart, rows, cfg, info, rubros, api)
+  File "E:\New folder\Economia\8vo\gore\Cash data request\sinversion_auto\sinv\excel_proyectos.py", line 281, in construir
+    wsB.write_string(i, C[k], r[k], f_txt)
+                              ~^^^
+KeyError: 'ejec'

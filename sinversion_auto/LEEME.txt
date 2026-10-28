@@ -1,0 +1,57 @@
+SINVERSION - ACTUALIZACION DE LOS EXCEL DE PROYECTOS Y DE GASTO CORRIENTE (version 2)
+====================================================================================
+
+QUE GENERA (carpeta  salida\AAAA-MM-DD\ )
+  SINVERSION_PROYECTOS_AAAA-MM-DD.xlsx        todas las UE con proyectos (formato Alex + disponibilidad, rubro, saldo al expediente)
+  SINVERSION_GASTO_CORRIENTE_AAAA-MM-DD.xlsx  gasto corriente de la UE 001 por gerencia/oficina y funcion
+
+DE DONDE SALEN LOS DATOS (todo por internet, sin descargar Excel)
+  - Cartera de inversiones ........ Banco de Inversiones del MEF (API)
+  - Rubro de financiamiento ....... API de Datos Abiertos del MEF (por UE y por meta)
+  - Gerencia / oficina ............ Silucia (api/metas) + lo que usted corrija en maestro.xlsx
+  - Cifras (PIM, certificacion...)  API de Datos Abiertos del MEF; si falla, el reporte SIAF (.xls) de la carpeta "entrada" (config.json -> "fuente_siaf": "auto")
+                                    (usa la API de Datos Abiertos en vez del .xls; "auto" = API y, si falla, el .xls).
+  Como baja los datos de la API de Datos Abiertos: primero la "descarga masiva" (dump: un CSV ya filtrado, rapido) y, si falla, la API paginada.
+  Si una API no responde, el programa sigue asi (y lo avisa en las hojas "Config" y "Control" de cada Excel y en el mensaje de pantalla):
+    1) cifras: reporte SIAF (.xls) de "entrada" si lo hay;
+    2) si no hay .xls: la ULTIMA DESCARGA BUENA de la API (cache_api_filas.json.gz), maximo 3 dias de antiguedad (config.json: cache_cifras_dias).
+       Los Excel salen con una franja roja "CIFRAS DESACTUALIZADAS: copia del dd/mm hh:mm" en la hoja Resumen;
+    3) si no hay ni .xls ni copia reciente: se detiene y pide subir el .xls.
+  La API de Datos Abiertos del MEF se cae por ratos y a veces responde "vacia" (probado el 07/10/2026).
+
+CADA DIA
+  1. Deje en la carpeta "entrada" el reporte SIAF (.xls). (Opcional: Cartera .xlsx y reportes de rubro de la Consulta Amigable,
+     solo como respaldo si las APIs fallan.)
+  2. Con la tarea instalada (INSTALAR_TAREA_DIARIA.bat) se actualiza solo de lunes a viernes a las 08:30 y 14:30.
+     O doble clic en ACTUALIZAR_AHORA.bat. Aparece un mensaje al terminar.
+  Si falla algo: salida\ERROR.txt (en espanol). Ultima corrida: salida\ULTIMO_RESULTADO.txt.
+
+TOKEN DE SILUCIA
+  - Silucia cambia su informacion cada ~3 meses, por eso el programa guarda una copia local (cache_silucia.json) y NO necesita
+    token todos los dias: con el token vencido usa la copia, siempre que tenga menos de 90 dias.
+  - Cuando la copia no exista o pase de 90 dias, aparece el mensaje "ACCION REQUERIDA: renovar el token de Silucia" (y el archivo
+    ALERTA_TOKEN.txt). Entonces: pegar el token nuevo en token_silucia.txt (una linea, con o sin "Bearer") o usar
+    RENOVAR_TOKEN_SILUCIA.bat; la siguiente corrida actualiza la copia. El programa avisa 3 dias antes de que venza el token.
+  - Nota: el token de prueba duraba 10 horas; basta con que este vigente en la corrida en que se renueva la copia.
+
+PROYECTOS Y METAS NUEVOS
+  - Proyectos de la UE 001 nuevos: si Silucia trae su ejecutora y esta figura en maestro.xlsx hoja "MapaEjecutoras", quedan
+    ubicados en la gerencia sugerida (nota "confirmar"). Si no, aparecen en "Sin clasificar".
+  - Gasto corriente: maestro.xlsx hoja "ClasifGC" (UE + meta -> gerencia/oficina). Hoy Silucia no trae oficina para estas metas
+    (todas llegan como "GASTO CORRIENTE"). Hay una propuesta para validar: outputs\Propuesta_clasificacion_gasto_corriente_UE001.xlsx;
+    una vez validada se carga con:  python importar_validacion_gc.py <archivo validado>.  Las metas nuevas se agregan solas.
+  - Base legal y observaciones: maestro.xlsx, hoja "Complementos".
+
+REGLAS (version 3, por saldos): ya no se usa el 50% de compromiso. Cada proyecto recibe un SEMAFORO:
+  Disponible (verde) | Con condiciones (amarillo) | Rebajando certificacion (azul) | Restringido (PROCOMPITE / Anexo I) | No mover (devengado o avance acumulado > 90%)
+  | Sin saldo util (menos de S/ 10 000) | Bolsa generica | Sin PIM.  El detalle esta en la hoja "Reglas" del Excel.
+  Datos extra por proyecto (se bajan solos y se guardan en cache_ssi.json.gz y cache_f12b.json.gz): ficha SSI del Banco de Inversiones (tipo de inversion, estado,
+  cierre, costo) y Formato 12-B (programacion del ano y devengado acumulado). Si esas APIs no responden se usa lo guardado y se avisa; nunca se inventan datos.
+  Parametros en config.json: monto_minimo (10000), umbral_ejecutado (0.90), umbral_avance_acumulado (0.90), anexo1_cuis (lista de CUI del Anexo I, pendiente de la OPMI),
+  usar_ssi / usar_f12b (true/false).
+ANEXO I (recursos con destino especifico): cuando la OPMI entregue la lista, crear el archivo anexo1_cuis.txt junto a actualizar.exe con un CUI por linea; esos proyectos pasan a "Restringido".
+FORMATO DE LA OFICINA: retoque el Excel a gusto (orden de hojas, hojas ocultas, anchos, zoom) y arrastre ese archivo sobre GUARDAR_FORMATO.bat: las proximas actualizaciones salen asi (formato_oficina.json).
+HISTORIAL: cada corrida guarda una foto en la carpeta historial (60 ultimas); la hoja "Cambios" lista lo nuevo, lo que cambio de semaforo y las variaciones desde la corrida anterior.
+HOJAS DEL EXCEL DE PROYECTOS: Resumen, Base (todo, con filtros), Donde hay plata (ranking), Gerencia de Infraestructura, Gerencias y Oficinas, Sin clasificar,
+  Otras UE (una sola hoja), Saldo al expediente, Rubro por CUI, Calidad de datos, Control, Reglas, Config.
+INSTALACION (una vez, por soporte): INSTALAR_TAREA_DIARIA.bat en la PC que quedara encendida; los demas solo abren los Excel de salida.

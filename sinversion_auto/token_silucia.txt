@@ -1,0 +1,1 @@
+PEGUE AQUI EL TOKEN DE SILUCIA (una sola linea; borre este texto). Tambien puede usar RENOVAR_TOKEN_SILUCIA.bat

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\New folder\Economia\8vo\gore\Cash data request\sinversion_auto\actualizar.py", line 430, in main
+    r = correr(args)
+        ^^^^^^^^^^^^
+  File "E:\New folder\Economia\8vo\gore\Cash data request\sinversion_auto\actualizar.py", line 382, in correr
+    ep.construir(d_proy, siaf, cart, rows, cfg, info, rubros, api)
+  File "E:\New folder\Economia\8vo\gore\Cash data request\sinversion_auto\sinv\excel_proyectos.py", line 540, in construir
+    aplicar_formato(WS, meta_info.get('formato'), {'Dónde hay plata': HDH, 'Base': BASE_COLS, 'Cambios': HC, 'Rubro por CUI': HRB, 'Lista Antony': HAN})
+                                                                                                                              ^^^
+NameError: name 'HRB' is not defined

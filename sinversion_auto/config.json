@@ -1,0 +1,17 @@
+{
+  "umbral_ejecutado": 0.9,
+  "usar_api": true,
+  "api_sin_verificar_certificado": true,
+  "fuente_siaf": "auto",
+  "usar_api_cartera": true,
+  "usar_silucia": true,
+  "anio": 2026,
+  "ue_gasto_corriente": [
+    "001"
+  ],
+  "monto_minimo": 10000,
+  "umbral_avance_acumulado": 0.9,
+  "usar_ssi": true,
+  "usar_f12b": true,
+  "anexo1_cuis": []
+}

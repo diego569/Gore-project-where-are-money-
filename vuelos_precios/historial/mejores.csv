@@ -1,0 +1,13 @@
+﻿ts,origen,ida,vuelta,total_tarifa,extras,total_ajustado,detalle,tipo
+2026-10-12 17:39,Juliaca,2027-01-19 LATAM 08:20-10:00 directo,2027-01-26 LATAM 07:25-09:00 directo,541,0,541,,2 vuelos sueltos
+2026-10-12 17:39,Juliaca,2027-01-19 LATAM 08:20-10:00 directo,2027-01-26 (elegir en Google Flights),541,0,541,,ida y vuelta (tarifa conjunta)
+2026-10-12 17:39,Arequipa,2027-01-19 JetSMART 20:52-22:30 directo,2027-01-27 JetSMART 06:10-07:44 directo,445,80,525,Bus Puno->AQP el mismo dia; Bus AQP->Puno el mismo dia,2 vuelos sueltos
+2026-10-12 17:39,Arequipa,2027-01-19 JetSMART 20:52-22:30 directo,2027-01-26 (elegir en Google Flights),445,80,525,Bus Puno->AQP el mismo dia,ida y vuelta (tarifa conjunta)
+2026-10-12 17:39,Cusco,2027-01-19 JetSMART 15:35-17:15 directo,2027-01-26 JetSMART 09:00-10:20 directo,415,100,515,Bus Puno->CUZ el mismo dia; Bus CUZ->Puno el mismo dia,2 vuelos sueltos
+2026-10-12 17:39,Cusco,2027-01-19 JetSMART 10:55-12:35 directo,2027-01-26 (elegir en Google Flights),414,200,614,Salir de Puno el dia anterior (noche en Cusco),ida y vuelta (tarifa conjunta)
+2026-10-13 19:47,Juliaca,2027-01-19 LATAM 08:20-10:00 directo,2027-01-26 LATAM 07:25-09:00 directo,540,0,540,,2 vuelos sueltos
+2026-10-13 19:47,Juliaca,2027-01-19 LATAM 08:20-10:00 directo,2027-01-26 (elegir en Google Flights),539,0,539,,ida y vuelta (tarifa conjunta)
+2026-10-13 19:47,Arequipa,2027-01-19 JetSMART 20:52-22:30 directo,2027-01-27 JetSMART 06:10-07:44 directo,447,80,527,Bus Puno->AQP el mismo dia; Bus AQP->Puno el mismo dia,2 vuelos sueltos
+2026-10-13 19:47,Arequipa,2027-01-19 JetSMART 20:52-22:30 directo,2027-01-26 (elegir en Google Flights),446,80,526,Bus Puno->AQP el mismo dia,ida y vuelta (tarifa conjunta)
+2026-10-13 19:47,Cusco,2027-01-20 JetSMART 21:30-23:10 directo,2027-01-26 JetSMART 09:00-10:20 directo,415,100,515,Bus Puno->CUZ el mismo dia; Bus CUZ->Puno el mismo dia,2 vuelos sueltos
+2026-10-13 19:47,Cusco,2027-01-19 JetSMART 10:55-12:35 directo,2027-01-26 (elegir en Google Flights),415,200,615,Salir de Puno el dia anterior (noche en Cusco),ida y vuelta (tarifa conjunta)

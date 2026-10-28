@@ -1,0 +1,13 @@
+Consulta 2026-10-13 19:47
+Cusco     2 vuelos sueltos               total PEN 515 (tarifa 415 + extras 100)  (+0 vs foto anterior)
+          ida 2027-01-20 JetSMART 21:30-23:10 directo | vuelta 2027-01-26 JetSMART 09:00-10:20 directo
+Arequipa  ida y vuelta (tarifa conjunta) total PEN 526 (tarifa 446 + extras 80)  (+1 vs foto anterior)
+          ida 2027-01-19 JetSMART 20:52-22:30 directo | vuelta 2027-01-26 (elegir en Google Flights)
+Arequipa  2 vuelos sueltos               total PEN 527 (tarifa 447 + extras 80)  (+2 vs foto anterior)
+          ida 2027-01-19 JetSMART 20:52-22:30 directo | vuelta 2027-01-27 JetSMART 06:10-07:44 directo
+Juliaca   ida y vuelta (tarifa conjunta) total PEN 539 (tarifa 539 + extras 0)  (-2 vs foto anterior)
+          ida 2027-01-19 LATAM 08:20-10:00 directo | vuelta 2027-01-26 (elegir en Google Flights)
+Juliaca   2 vuelos sueltos               total PEN 540 (tarifa 540 + extras 0)  (-1 vs foto anterior)
+          ida 2027-01-19 LATAM 08:20-10:00 directo | vuelta 2027-01-26 LATAM 07:25-09:00 directo
+Cusco     ida y vuelta (tarifa conjunta) total PEN 615 (tarifa 415 + extras 200)  (+1 vs foto anterior)
+          ida 2027-01-19 JetSMART 10:55-12:35 directo | vuelta 2027-01-26 (elegir en Google Flights)

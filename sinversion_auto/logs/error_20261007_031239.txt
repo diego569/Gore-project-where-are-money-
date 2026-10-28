@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "C:\Users\servidor\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 847, in move
+    os.rename(src, real_dst)
+PermissionError: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: 'C:\\Users\\servidor\\AppData\\Local\\Temp\\claude\\E--New-folder-Economia-8vo-gore-Cash-data-request\\b8054142-53e9-430c-b7c6-303623c1a225\\scratchpad\\t2\\in\\Cartera_261006-175402.xlsx' -> 'C:\\Users\\servidor\\AppData\\Local\\Temp\\claude\\E--New-folder-Economia-8vo-gore-Cash-data-request\\b8054142-53e9-430c-b7c6-303623c1a225\\scratchpad\\t2\\in\\procesados\\2026-10-06\\Cartera_261006-175402.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\New folder\Economia\8vo\gore\Cash data request\sinversion_auto\actualizar.py", line 110, in main
+    r = correr(args)
+        ^^^^^^^^^^^^
+  File "E:\New folder\Economia\8vo\gore\Cash data request\sinversion_auto\actualizar.py", line 97, in correr
+    shutil.move(str(p), str(arch / p.name)) if not (arch / p.name).exists() else p.unlink()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\servidor\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 868, in move
+    os.unlink(src)
+PermissionError: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: 'C:\\Users\\servidor\\AppData\\Local\\Temp\\claude\\E--New-folder-Economia-8vo-gore-Cash-data-request\\b8054142-53e9-430c-b7c6-303623c1a225\\scratchpad\\t2\\in\\Cartera_261006-175402.xlsx'
